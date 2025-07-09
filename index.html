@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anim Henry Antwi | Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  /* Animate gradient background */
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(270deg, #00aaff, #00ffaa, #ffaa00, #ff00aa);
+    background-size: 800% 800%;
+    animation: gradientBG 25s ease infinite;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.6);
+    border-radius: 16px;
+    padding: 40px 50px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.9);
+  }
+
+  /* Profile image */
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #00ffaa;
+    box-shadow: 0 0 25px #00ffaaaa;
+  }
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px #00ffaa;
+  }
+  header p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #ccffdd;
+    letter-spacing: 1px;
+  }
+
+  section {
+    margin-bottom: 50px;
+    background: rgba(255 255 255 / 0.1);
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  }
+
+  section h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    border-bottom: 3px solid #00ffaa;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #00ffaa;
+  }
+
+  /* About */
+  .about p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddffea;
+    margin-bottom: 16px;
+  }
+
+  /* Experience */
+  .experience-item {
+    margin-bottom: 30px;
+  }
+  .experience-item h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #00ffaa;
+    margin-bottom: 4px;
+  }
+  .experience-item span {
+    font-style: italic;
+    font-weight: 300;
+    color: #aaffcc;
+  }
+  .experience-item p {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 1.05rem;
+    color: #ccffdd;
+  }
+
+  /* Skills */
+  .skill {
+    margin-bottom: 22px;
+  }
+  .skill-name {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 1.15rem;
+    color: #00ffaa;
+    letter-spacing: 0.5px;
+  }
+  .skill-bar {
+    background: #222;
+    border-radius: 30px;
+    height: 22px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 6px #111;
+  }
+  .skill-progress {
+    background: linear-gradient(90deg, #00ffaa, #00ddcc);
+    height: 100%;
+    width: 0;
+    border-radius: 30px 0 0 30px;
+    transition: width 2s ease;
+    box-shadow: 0 0 10px #00ffaaaa;
+  }
+
+  /* Contact */
+  .contact p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    color: #ccffdd;
+  }
+  .contact a {
+    color: #00ffaa;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    main {
+      padding: 30px 20px;
+    }
+    header h1 {
+      font-size: 2.3rem;
+    }
+    section h2 {
+      font-size: 1.7rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <header>
+    <div class="profile-pic">
+      <img src="kojo.jpg" alt="Anim Henry Antwi" />
+    </div>
+    <h1>Anim Henry Antwi</h1>
+    <p>IT Student & Aspiring Software Developer</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Anim Henry Antwi, passionate about programming and software development. I enjoy solving complex problems with elegant code and learning new technologies to grow my skillset.</p>
+    <p>My experience spans web development and looking to gain experience on AI and Machine Learning. I am always excited to collaborate on projects that challenge me and help build real-world solutions.</p>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Typist and IT Consultant</h3>
+      <span>June 2025 </span>
+      <p>Created responsive cash system to record daily sales.</p>
+    </div>
+    <div class="experience-item">
+      <h3>IT Support Assistant</h3>
+      <span> 2023 to date</span>
+      <p>Provided tech support to students and troubleshooting software and hardware issues efficiently.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+
+    <div class="skill" style="--level:90%">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar"><div class="skill-progress"></div></div>
+    </div>
+
+    <div class="skill" style="--level:85%">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar"><div class="skill-progress"></div></div>
+    </div>
+
+    <div class="skill" style="--level:80%">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-progress"></div></div>
+    </div>
+
+    <div class="skill" style="--level:75%">
+      <div class="skill-name">C++</div>
+      <div class="skill-bar"><div class="skill-progress"></div></div>
+    </div>
+
+    <div class="skill" style="--level:70%">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-progress"></div></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:animhenryantwi@example.com">almightydegeneral@icloud.com/henztech02@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/general-henry-85ba00345/" target="_blank" rel="noopener">linkedin.com/in/general-henry</a></p>
+    <p>GitHub: <a href="https://github.com/Henry-joe-kojo" target="_blank" rel="noopener">github.com/Henry-joe-kojo</a></p>
+  </section>
+</main>
+
+<script>
+  // Animate skill bars on load based on CSS variable --level
+  window.addEventListener('load', () => {
+    const skillBars = document.querySelectorAll('.skill-progress');
+    skillBars.forEach((bar, idx) => {
+      const parent = bar.parentElement.parentElement;
+      const level = parent.style.getPropertyValue('--level').trim();
+      bar.style.width = level;
+    });
+  });
+</script>
+
+</body>
+</html>
